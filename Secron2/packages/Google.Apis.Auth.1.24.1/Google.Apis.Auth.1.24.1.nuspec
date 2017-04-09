@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Google.Apis.Auth</id>
+    <version>1.24.1</version>
+    <title>Google APIs Auth Client Library</title>
+    <authors>Google Inc.</authors>
+    <owners>Google Inc.</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://developers.google.com/api-client-library/dotnet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Google APIs Client Library is a runtime client for working with Google services.
+        This package includes auth components like user-credential, authorization code flow, etc. for making authenticated calls using the OAuth2 spec.
+
+        Supported Platforms:
+
+        - .NET Framework 4.5 and 4.6
+
+        - NetStandard1.3
+
+        - Windows 8 Apps
+
+        - Windows Phone 8 and 8.1
+
+        - Portable Class Libraries</description>
+    <summary />
+    <tags>Google</tags>
+    <dependencies>
+      <group>
+        <dependency id="Google.Apis.Core" version="1.24.1" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Google.Apis" version="1.24.1" />
+        <dependency id="Google.Apis.Core" version="1.24.1" />
+      </group>
+      <group targetFramework="Unsupported0.0">
+        <dependency id="Google.Apis" version="1.24.1" />
+        <dependency id="Google.Apis.Core" version="1.24.1" />
+        <dependency id="NETStandard.Library" version="1.6.1" />
+        <dependency id="System.Net.Requests" version="4.3.0" />
+        <dependency id="System.Diagnostics.Process" version="4.3.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
